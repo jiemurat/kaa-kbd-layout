@@ -20,10 +20,10 @@ xkb_symbols "latin" {
 
     key.type[group1]="FOUR_LEVEL";
     
-    key <AC01> {	[	  á,	Á 	]	};
-    key <AD07> {	[	  ú,	Ú		]	};
-    key <AD08> {	[	  ı,	Í		]	};
-    key <AD09> {	[	  ó,	Ó		]	};
-    key <AC05> {	[	  ǵ,	Ǵ		]	};
-    key <AB06> {	[	  ń,	Ń		]	};
+    key <AC01> {        [         á,    Á               ]       };
+    key <AD07> {        [         ú,    Ú               ]       };
+    key <AD08> {        [         ı,    Í               ]       };
+    key <AD09> {        [         ó,    Ó               ]       };
+    key <AC05> {        [         ǵ,    Ǵ               ]       };
+    key <AB06> {        [         ń,    Ń               ]       };
 };
