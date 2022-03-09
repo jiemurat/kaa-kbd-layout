@@ -1,0 +1,30 @@
+// Karakalpak standard keyboard layout
+//
+// Abat Dauletbaev <abat.dauletbayev@gmail.com>
+//
+// Created based on the US standard keyboard. AEN <aen@logic.ru>
+// The Karakalpak symbols are used with Right Alt.
+// The following symbols were added:
+// ú = Right Alt + u
+// ǵ = Right Alt + g | Ǵ = Shift + Right Alt + g
+// á = Right Alt + a
+// ó = Right Alt + o
+// ı = Right Alt + i
+
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "latin(type4)"
+
+    name[Group1]= "Qaraqalpaqsha";
+    
+    key <AC01> {[  a, A, aacute, Aacute            ]};
+    key <AD07> {[  u, U, uacute, Uacute            ]};
+    key <AD08> {[  i, I, idotless, Iacute          ]};
+    key <AD09> {[  o, O, oacute, Oacute            ]};
+    key <AC05> {[  g, G, 501, 500                  ]};
+    key <AB06> {[  n, N, nacute, Nacute            ]};
+    key <AB10> {[ slash, backslash, bar, brokenbar ]};
+
+    include "level3(ralt_switch)"
+};
