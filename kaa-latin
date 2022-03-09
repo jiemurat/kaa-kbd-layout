@@ -2,28 +2,29 @@
 //
 // Abat Dauletbaev <abat.dauletbayev@gmail.com>
 //
-// Created based on the Russian standard keyboard. AEN <aen@logic.ru>
+// Created based on the US standard keyboard. AEN <aen@logic.ru>
 // The Karakalpak symbols are used with Right Alt.
 // The following symbols were added:
-// ú = Right Alt + u | Ú
-// ń = Right Alt + n | Ń
-// ǵ = Right Alt + g | Ǵ
-// á = Right Alt + a | Á
-// ó = Right Alt + o | Ó
-// ı = Right Alt + i | Í
+// ú = Right Alt + u
+// ǵ = Right Alt + g | Ǵ = Shift + Right Alt + g
+// á = Right Alt + a
+// ó = Right Alt + o
+// ı = Right Alt + i
 
 default  partial alphanumeric_keys
-xkb_symbols "latin" {
-    include "us"
+xkb_symbols "basic" {
+
+    include "latin(type4)"
 
     name[Group1]= "Qaraqalpaqsha";
-
-    key.type[group1]="FOUR_LEVEL";
     
-    key <AC01> {        [         á,    Á               ]       };
-    key <AD07> {        [         ú,    Ú               ]       };
-    key <AD08> {        [         ı,    Í               ]       };
-    key <AD09> {        [         ó,    Ó               ]       };
-    key <AC05> {        [         ǵ,    Ǵ               ]       };
-    key <AB06> {        [         ń,    Ń               ]       };
+    key <AC01> {[  a, A, aacute, Aacute            ]};
+    key <AD07> {[  u, U, uacute, Uacute            ]};
+    key <AD08> {[  i, I, idotless, Iacute          ]};
+    key <AD09> {[  o, O, oacute, Oacute            ]};
+    key <AC05> {[  g, G, 501, 500                  ]};
+    key <AB06> {[  n, N, nacute, Nacute            ]};
+    key <AB10> {[ slash, backslash, bar, brokenbar ]};
+
+    include "level3(ralt_switch)"
 };
