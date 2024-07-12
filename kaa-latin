@@ -22,7 +22,7 @@ xkb_symbols "basic" {
     key <AD07> {[  u, U, uacute, Uacute            ]};
     key <AD08> {[  i, I, idotless, Iacute          ]};
     key <AD09> {[  o, O, oacute, Oacute            ]};
-    key <AC05> {[  g, G, 501, 500                  ]};
+    key <AC05> {[  g, G, U01F5, U01F4              ]};
     key <AB06> {[  n, N, nacute, Nacute            ]};
     key <AB10> {[ slash, backslash, bar, brokenbar ]};
 
